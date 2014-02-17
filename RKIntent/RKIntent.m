@@ -6,24 +6,34 @@
 
 @implementation RKIntent
 {
-  id _data;
+  id _payload;
   RKIntentType _type;
+  RKIntentAction _action;
   RKIntentSource *_source;
 }
 
-- (id)initWithData:(id)data type:(RKIntentType)type source:(RKIntentSource *)source
+- (id)initWithAction:(RKIntentAction)action
+                type:(RKIntentType)type
+              source:(RKIntentSource *)source
+             payload:(id)payload
 {
   if ((self = [super init])) {
-    _data = data;
+    _action = action;
+    _payload = payload;
     _type = type;
     _source = source;
   }
   return self;
 }
 
-- (id)data
+- (id)payload
 {
-  return _data;
+  return _payload;
+}
+
+- (RKIntentAction)action
+{
+  return _action;
 }
 
 - (RKIntentType)type
@@ -41,14 +51,23 @@
 @implementation RKURLIntent
 {
   NSURL *_URL;
+  id _payload;
+  RKIntentAction _action;
   RKIntentSource *_source;
 }
 
-- (id)initWithURL:(NSURL *)URL source:(RKIntentSource *)source
+- (id)initWithAction:(RKIntentAction)action source:(RKIntentSource *)source URL:(NSURL *)URL
+{
+  return [self initWithAction:action source:source URL:URL payload:nil];
+}
+
+- (id)initWithAction:(RKIntentAction)action source:(RKIntentSource *)source URL:(NSURL *)URL payload:(id)payload
 {
   if ((self = [super init])) {
     _URL = [URL copy];
     _source = source;
+    _action = action;
+    _payload = payload;
   }
   return self;
 }
@@ -56,6 +75,11 @@
 - (NSURL *)URL
 {
   return _URL;
+}
+
+- (id)payload
+{
+  return _payload;
 }
 
 - (RKIntentType)type
@@ -66,6 +90,11 @@
 - (RKIntentSource *)source
 {
   return _source;
+}
+
+- (RKIntentAction)action
+{
+  return _action;
 }
 
 @end

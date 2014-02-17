@@ -5,15 +5,15 @@
 @implementation RKIntentSource
 {
   dispatch_queue_t _callbackQueue;
-  void(^_successBlock)(RKIntent *, id<RKIntentHandler>);
-  void(^_failureBlock)(RKIntent *);
+  void(^_successBlock)(id<RKIntent>, id<RKIntentHandler>);
+  void(^_failureBlock)(id<RKIntent>);
   NSString *_identifier;
 }
 
 - (id)initWithIdentifier:(NSString *)identifier
            callbackQueue:(dispatch_queue_t)callbackQueue
-            successBlock:(void (^)(RKIntent *, id<RKIntentHandler>))successBlock
-            failureBlock:(void (^)(RKIntent *))failureBlock
+            successBlock:(void (^)(id<RKIntent>, id<RKIntentHandler>))successBlock
+            failureBlock:(void (^)(id<RKIntent>))failureBlock
 {
   if ((self = [super init])) {
     _identifier = [identifier copy];
@@ -24,7 +24,7 @@
   return self;
 }
 
-- (void)didHandleIntent:(RKIntent *)intent withHandler:(id<RKIntentHandler>)handler
+- (void)didHandleIntent:(id<RKIntent>)intent withHandler:(id<RKIntentHandler>)handler
 {
   if (!_successBlock) return;
 
@@ -33,7 +33,7 @@
   });
 }
 
-- (void)failedToHandleIntent:(RKIntent *)intent
+- (void)failedToHandleIntent:(id<RKIntent>)intent
 {
   if (!_failureBlock) return;
 
