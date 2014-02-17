@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75E9F7893E3C4F3EBC17D690 /* libPods-RKIntentTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9141C7E49BE940D39FC37FD4 /* libPods-RKIntentTests.a */; };
 		879893A618B1DED500CEBDC6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 879893A518B1DED500CEBDC6 /* Foundation.framework */; };
 		879893AB18B1DED500CEBDC6 /* RKIntent.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 879893AA18B1DED500CEBDC6 /* RKIntent.h */; };
 		879893AD18B1DED500CEBDC6 /* RKIntent.m in Sources */ = {isa = PBXBuildFile; fileRef = 879893AC18B1DED500CEBDC6 /* RKIntent.m */; };
@@ -16,6 +17,9 @@
 		879893BA18B1DED500CEBDC6 /* libRKIntent.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 879893A218B1DED500CEBDC6 /* libRKIntent.a */; };
 		879893C018B1DED500CEBDC6 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 879893BE18B1DED500CEBDC6 /* InfoPlist.strings */; };
 		879893C218B1DED500CEBDC6 /* RKIntentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 879893C118B1DED500CEBDC6 /* RKIntentTests.m */; };
+		879893CD18B1E60400CEBDC6 /* RKIntentHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 879893CC18B1E60400CEBDC6 /* RKIntentHandler.m */; };
+		879893D018B1E7D000CEBDC6 /* RKIntentSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 879893CF18B1E7D000CEBDC6 /* RKIntentSource.m */; };
+		879893D218B1F06E00CEBDC6 /* RKIntentHandlerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 879893D118B1F06E00CEBDC6 /* RKIntentHandlerTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +46,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		16D3B5AB84AE4EDC82B15104 /* Pods-RKIntentTests.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKIntentTests.xcconfig"; path = "RKIntentTests/Pods/Pods-RKIntentTests.xcconfig"; sourceTree = "<group>"; };
 		879893A218B1DED500CEBDC6 /* libRKIntent.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRKIntent.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		879893A518B1DED500CEBDC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		879893A918B1DED500CEBDC6 /* RKIntent-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RKIntent-Prefix.pch"; sourceTree = "<group>"; };
@@ -53,6 +58,12 @@
 		879893BD18B1DED500CEBDC6 /* RKIntentTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RKIntentTests-Info.plist"; sourceTree = "<group>"; };
 		879893BF18B1DED500CEBDC6 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		879893C118B1DED500CEBDC6 /* RKIntentTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKIntentTests.m; sourceTree = "<group>"; };
+		879893CB18B1E60400CEBDC6 /* RKIntentHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKIntentHandler.h; sourceTree = "<group>"; };
+		879893CC18B1E60400CEBDC6 /* RKIntentHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKIntentHandler.m; sourceTree = "<group>"; };
+		879893CE18B1E7D000CEBDC6 /* RKIntentSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKIntentSource.h; sourceTree = "<group>"; };
+		879893CF18B1E7D000CEBDC6 /* RKIntentSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKIntentSource.m; sourceTree = "<group>"; };
+		879893D118B1F06E00CEBDC6 /* RKIntentHandlerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKIntentHandlerTests.m; sourceTree = "<group>"; };
+		9141C7E49BE940D39FC37FD4 /* libPods-RKIntentTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RKIntentTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +83,7 @@
 				879893B718B1DED500CEBDC6 /* UIKit.framework in Frameworks */,
 				879893BA18B1DED500CEBDC6 /* libRKIntent.a in Frameworks */,
 				879893B518B1DED500CEBDC6 /* Foundation.framework in Frameworks */,
+				75E9F7893E3C4F3EBC17D690 /* libPods-RKIntentTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +97,7 @@
 				879893BB18B1DED500CEBDC6 /* RKIntentTests */,
 				879893A418B1DED500CEBDC6 /* Frameworks */,
 				879893A318B1DED500CEBDC6 /* Products */,
+				16D3B5AB84AE4EDC82B15104 /* Pods-RKIntentTests.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +116,7 @@
 				879893A518B1DED500CEBDC6 /* Foundation.framework */,
 				879893B318B1DED500CEBDC6 /* XCTest.framework */,
 				879893B618B1DED500CEBDC6 /* UIKit.framework */,
+				9141C7E49BE940D39FC37FD4 /* libPods-RKIntentTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -112,6 +126,10 @@
 			children = (
 				879893AA18B1DED500CEBDC6 /* RKIntent.h */,
 				879893AC18B1DED500CEBDC6 /* RKIntent.m */,
+				879893CB18B1E60400CEBDC6 /* RKIntentHandler.h */,
+				879893CC18B1E60400CEBDC6 /* RKIntentHandler.m */,
+				879893CE18B1E7D000CEBDC6 /* RKIntentSource.h */,
+				879893CF18B1E7D000CEBDC6 /* RKIntentSource.m */,
 				879893A818B1DED500CEBDC6 /* Supporting Files */,
 			);
 			path = RKIntent;
@@ -129,6 +147,7 @@
 			isa = PBXGroup;
 			children = (
 				879893C118B1DED500CEBDC6 /* RKIntentTests.m */,
+				879893D118B1F06E00CEBDC6 /* RKIntentHandlerTests.m */,
 				879893BC18B1DED500CEBDC6 /* Supporting Files */,
 			);
 			path = RKIntentTests;
@@ -167,9 +186,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 879893C818B1DED500CEBDC6 /* Build configuration list for PBXNativeTarget "RKIntentTests" */;
 			buildPhases = (
+				D01AA270346E41D08A0BE2F1 /* Check Pods Manifest.lock */,
 				879893AE18B1DED500CEBDC6 /* Sources */,
 				879893AF18B1DED500CEBDC6 /* Frameworks */,
 				879893B018B1DED500CEBDC6 /* Resources */,
+				9D4ECD0CCF5D4974A25C0012 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -219,12 +240,47 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9D4ECD0CCF5D4974A25C0012 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/RKIntentTests/Pods/Pods-RKIntentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D01AA270346E41D08A0BE2F1 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8798939E18B1DED500CEBDC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				879893AD18B1DED500CEBDC6 /* RKIntent.m in Sources */,
+				879893CD18B1E60400CEBDC6 /* RKIntentHandler.m in Sources */,
+				879893D018B1E7D000CEBDC6 /* RKIntentSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,6 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				879893C218B1DED500CEBDC6 /* RKIntentTests.m in Sources */,
+				879893D218B1F06E00CEBDC6 /* RKIntentHandlerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +411,7 @@
 		};
 		879893C918B1DED500CEBDC6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D3B5AB84AE4EDC82B15104 /* Pods-RKIntentTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -375,6 +433,7 @@
 		};
 		879893CA18B1DED500CEBDC6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16D3B5AB84AE4EDC82B15104 /* Pods-RKIntentTests.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -409,6 +468,7 @@
 				879893C718B1DED500CEBDC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		879893C818B1DED500CEBDC6 /* Build configuration list for PBXNativeTarget "RKIntentTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +477,7 @@
 				879893CA18B1DED500CEBDC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
