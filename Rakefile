@@ -59,9 +59,9 @@ task :release do
 
   # Then release
   sh "git commit #{podspec_path} CHANGELOG.md -m 'Release #{spec_version}'"
-  sh "git tag -a #{spec_version} -m 'Release #{spec_version}' -f"
-  sh "git push origin master -f"
-  sh "git push origin --tags -f"
+  sh "git tag -a #{spec_version} -m 'Release #{spec_version}'"
+  sh "git push origin master"
+  sh "git push origin --tags"
 #  sh "pod push master #{podspec_path}"
   sh "pod push rkspecs #{podspec_path}"
 end
