@@ -18,10 +18,9 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '6.0'
   s.requires_arc = true
 
-  s.source_files = 'Classes'
+  s.source_files = 'RKIntent/RKIntent'
   s.resources = 'Assets'
 
-  s.ios.exclude_files = 'Classes/osx'
-  # s.public_header_files = 'Classes/**/*.h'
+  s.public_header_files = 'RKIntent/RKIntent/*.h'
   # s.frameworks = 'SomeFramework', 'AnotherFramework'
 end
