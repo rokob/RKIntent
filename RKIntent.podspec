@@ -9,10 +9,10 @@ Pod::Spec.new do |s|
                        with the purpose of simplifying navigation in complicated
                        apps.
                        DESC
-  s.homepage         = "https://github.com/rokob"
+  s.homepage         = "https://github.com/rokob/RKIntent"
   s.license          = 'MIT'
   s.author           = { "Andrew Ledvina" => "wvvwwvw@gmail.com" }
-  s.source           = { :git => "https://github.com/rokob/rkintent.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/rokob/RKIntent.git", :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/wolfgangfabian'
 
   s.platform     = :ios, '6.0'
